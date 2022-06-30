@@ -1,358 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css" />
-    <title>Learning Bootstrap v5 with SASS</title>
-  </head>
 
-  <body>
-    <!-- Start of Navbar Section -->
-    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="images/logo.png" alt="logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css" />
+  <title>Learning Bootstrap v5 with SASS</title>
+</head>
+
+<body>
+  <!-- Start of Navbar Section -->
+  <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <button type="button" class="rounded-pill btn-rounded">
+          +234 708 216 3310
+          <span>
+            <i class="fas fa-phone-alt"></i>
+          </span>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Start of Intro Section -->
+  <section id="home" class="intro-section">
+    <div class="container">
+      <div class="row align-items-center text-white">
+        <!-- Start Content for the intro -->
+        <div class="col-md-6 intros">
+          <h1 class="display-2">
+            <span class="display-2--intro"> Hey!, I'm Habeeb </span>
+            <span class="display-2--description lh-base">
+              this is a multi-purpose responsive layout created with bootstrap
+              v5. (here you can place your description text.)
+            </span>
+          </h1>
           <button type="button" class="rounded-pill btn-rounded">
-            +234 708 216 3310
+            Get in Touch
             <span>
-              <i class="fas fa-phone-alt"></i>
+              <i class="fas fa-arrow-right"></i>
             </span>
           </button>
         </div>
-      </div>
-    </nav>
-
-    <!-- Start of Intro Section -->
-    <section id="home" class="intro-section">
-      <div class="container">
-        <div class="row align-items-center text-white">
-          <!-- Start Content for the intro -->
-          <div class="col-md-6 intros">
-            <h1 class="display-2">
-              <span class="display-2--intro"> Hey!, I'm Habeeb </span>
-              <span class="display-2--description lh-base">
-                this is a multi-purpose responsive layout created with bootstrap
-                v5. (here you can place your description text.)
+        <!-- Start Content for the video -->
+        <div class="col-md-6 intros text-end">
+          <div class="video-box">
+            <img class="img-fluid" src="images/arts/intro-section-illustration.png" alt="video illustration" />
+            <a href="" class="glightbox position-absolute top-50 start-50 translate-middle">
+              <span>
+                <i class="fas fa-play-circle"></i>
               </span>
-            </h1>
-            <button type="button" class="rounded-pill btn-rounded">
-              Get in Touch
+              <span class="border-animation border-animation--border-1"></span>
+              <span class="border-animation border-animation--border-2"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="1"
+        d="M0,160L30,138.7C60,117,120,75,180,80C240,85,300,139,360,181.3C420,224,480,256,540,272C600,288,660,288,720,256C780,224,840,160,900,144C960,128,1020,160,1080,144C1140,128,1200,64,1260,53.3C1320,43,1380,85,1410,106.7L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+
+  <!-- Start of Companies -->
+
+  <section id="companies" class="companies">
+    <div class="container">
+      <div class="row text-center">
+        <h4 class="fw-bold lead mb-3">Trusted by Companies like</h4>
+        <div class="heading-line mb-3"></div>
+      </div>
+    </div>
+
+    <!-- Start of Companies -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-2">
+          <div class="companies__logo-box shadow-sm">
+            <img src="images/companies/company-1.png" alt="company 1 logo" title="company 1 logo" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="companies__logo-box shadow-sm">
+            <img src="images/companies/company-2.png" alt="company 2 logo" title="company 2 logo" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="companies__logo-box shadow-sm">
+            <img src="images/companies/company-3.png" alt="company 3 logo" title="company 3 logo" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="companies__logo-box shadow-sm">
+            <img src="images/companies/company-4.png" alt="company 4 logo" title="company 4 logo" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="companies__logo-box shadow-sm">
+            <img src="images/companies/company-5.png" alt="company 5 logo" title="company 5 logo" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="companies__logo-box shadow-sm">
+            <img src="images/companies/company-6.png" alt="company 6 logo" title="company 6 logo" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Start of Services -->
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="display-3 fw-bold">Our Services</h1>
+        <div class="heading-line mb-1"></div>
+      </div>
+
+      <!-- Start of description content -->
+
+      <div class="row pt-2 pb-2 mt-0 mb-3">
+        <div class="col-md-6 border-right">
+          <div class="bg-white p-3">
+            <h2 class="fw-bold text-capitalize text-center">
+              Our Services Range from initial design to deployment anywhere
+              anytime
+            </h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="bg-white p-4 text-start">
+            <p class="fw-light">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
+              dolorem, provident eligendi voluptate fugiat cum saepe quas
+              libero eaque omnis? Excepturi repellendus doloremque repellat,
+              dicta odit dolorem perferendis ab! Assumenda!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start the content for the services -->
+    <div class="container">
+      <!-- Start of marketing content -->
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+          <div class="services__content">
+            <div class="icon d-block fas fa-paper-plane"></div>
+            <h3 class="display-3--title mt-1">Marketing</h3>
+            <p class="lh-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              aliquam! Non, harum deleniti veritatis hic ad amet, consequatur
+              maxime quasi ab corporis, fuga deserunt eos beatae voluptas
+              quae.
+            </p>
+
+            <button type="button" class="rounded-pill btn-rounded border-primary">
+              Learn more
               <span>
                 <i class="fas fa-arrow-right"></i>
               </span>
             </button>
           </div>
-          <!-- Start Content for the video -->
-          <div class="col-md-6 intros text-end">
-            <div class="video-box">
-              <img
-                class="img-fluid"
-                src="images/arts/intro-section-illustration.png"
-                alt="video illustration"
-              />
-              <a
-                href=""
-                class="glightbox position-absolute top-50 start-50 translate-middle"
-              >
-                <span>
-                  <i class="fas fa-play-circle"></i>
-                </span>
-                <span
-                  class="border-animation border-animation--border-1"
-                ></span>
-                <span
-                  class="border-animation border-animation--border-2"
-                ></span>
-              </a>
-            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+          <div class="services__pic">
+            <img src="images/services/service-1.png" alt="marketing illustration" class="img-fluid" />
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,160L30,138.7C60,117,120,75,180,80C240,85,300,139,360,181.3C420,224,480,256,540,272C600,288,660,288,720,256C780,224,840,160,900,144C960,128,1020,160,1080,144C1140,128,1200,64,1260,53.3C1320,43,1380,85,1410,106.7L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-
-    <!-- Start of Companies -->
-
-    <section id="companies" class="companies">
-      <div class="container">
-        <div class="row text-center">
-          <h4 class="fw-bold lead mb-3">Trusted by Companies like</h4>
-          <div class="heading-line mb-3"></div>
+      <!-- start the web development content -->
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
+          <div class="services__pic">
+            <img src="images/services/service-2.png" alt="web development illustration" class="img-fluid" />
+          </div>
         </div>
-      </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+          <div class="services__content">
+            <div class="icon d-block fas fa-code"></div>
+            <h3 class="display-3--title mt-1">Web development</h3>
+            <p class="lh-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              aliquam! Non, harum deleniti veritatis hic ad amet, consequatur
+              maxime quasi ab corporis, fuga deserunt eos beatae voluptas
+              quae.
+            </p>
 
-      <!-- Start of Companies -->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-lg-2">
-            <div class="companies__logo-box shadow-sm">
-              <img
-                src="images/companies/company-1.png"
-                alt="company 1 logo"
-                title="company 1 logo"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-2">
-            <div class="companies__logo-box shadow-sm">
-              <img
-                src="images/companies/company-2.png"
-                alt="company 2 logo"
-                title="company 2 logo"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-2">
-            <div class="companies__logo-box shadow-sm">
-              <img
-                src="images/companies/company-3.png"
-                alt="company 3 logo"
-                title="company 3 logo"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-2">
-            <div class="companies__logo-box shadow-sm">
-              <img
-                src="images/companies/company-4.png"
-                alt="company 4 logo"
-                title="company 4 logo"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-2">
-            <div class="companies__logo-box shadow-sm">
-              <img
-                src="images/companies/company-5.png"
-                alt="company 5 logo"
-                title="company 5 logo"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-2">
-            <div class="companies__logo-box shadow-sm">
-              <img
-                src="images/companies/company-6.png"
-                alt="company 6 logo"
-                title="company 6 logo"
-                class="img-fluid"
-              />
-            </div>
+            <button type="button" class="rounded-pill btn-rounded border-primary">
+              Learn more
+              <span>
+                <i class="fas fa-arrow-right"></i>
+              </span>
+            </button>
           </div>
         </div>
       </div>
-    </section>
+      <!-- Start cloud content -->
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+          <div class="services__content">
+            <div class="icon d-block fas fa-cloud-upload-alt"></div>
+            <h3 class="display-3--title mt-1">Cloud Hosting</h3>
+            <p class="lh-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              aliquam! Non, harum deleniti veritatis hic ad amet, consequatur
+              maxime quasi ab corporis, fuga deserunt eos beatae voluptas
+              quae.
+            </p>
 
-    <!-- Start of Services -->
-
-    <section class="services" id="services">
-      <div class="container">
-        <div class="row text-center">
-          <h1 class="display-3 fw-bold">Our Services</h1>
-          <div class="heading-line mb-1"></div>
-        </div>
-
-        <!-- Start of description content -->
-
-        <div class="row pt-2 pb-2 mt-0 mb-3">
-          <div class="col-md-6 border-right">
-            <div class="bg-white p-3">
-              <h2 class="fw-bold text-capitalize text-center">
-                Our Services Range from initial design to deployment anywhere
-                anytime
-              </h2>
-            </div>
+            <button type="button" class="rounded-pill btn-rounded border-primary">
+              Learn more
+              <span>
+                <i class="fas fa-arrow-right"></i>
+              </span>
+            </button>
           </div>
-          <div class="col-md-6">
-            <div class="bg-white p-4 text-start">
-              <p class="fw-light">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
-                dolorem, provident eligendi voluptate fugiat cum saepe quas
-                libero eaque omnis? Excepturi repellendus doloremque repellat,
-                dicta odit dolorem perferendis ab! Assumenda!
-              </p>
-            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+          <div class="services__pic">
+            <img src="images/services/service-3.png" alt="cloud hosting illustration" class="img-fluid" />
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Start the content for the services -->
-      <div class="container">
-        <!-- Start of marketing content -->
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-            <div class="services__content">
-              <div class="icon d-block fas fa-paper-plane"></div>
-              <h3 class="display-3--title mt-1">Marketing</h3>
-              <p class="lh-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-                aliquam! Non, harum deleniti veritatis hic ad amet, consequatur
-                maxime quasi ab corporis, fuga deserunt eos beatae voluptas
-                quae.
-              </p>
+  <!-- Start of Testimonials -->
+  <section id="testimonials" class="testimonials">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="1"
+        d="M0,160L34.3,138.7C68.6,117,137,75,206,80C274.3,85,343,139,411,181.3C480,224,549,256,617,256C685.7,256,754,224,823,186.7C891.4,149,960,107,1029,85.3C1097.1,64,1166,64,1234,85.3C1302.9,107,1371,149,1406,170.7L1440,192L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+      </path>
+    </svg>
+    <div class="container">
+      <div class="row text-center text-white">
+        <h1 class="display-3 fw-bold">Testimonials</h1>
+        <hr style="width: 100px; height: 3px" class="mx-auto" />
+        <p class="lead pt-1">What our clients are saying</p>
+      </div>
 
-              <button
-                type="button"
-                class="rounded-pill btn-rounded border-primary"
-              >
-                Learn more
-                <span>
-                  <i class="fas fa-arrow-right"></i>
-                </span>
-              </button>
-            </div>
-          </div>
-          <div
-            class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end"
-          >
-            <div class="services__pic">
-              <img
-                src="images/services/service-1.png"
-                alt="marketing illustration"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
-        <!-- start the web development content -->
-        <div class="row">
-          <div
-            class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start"
-          >
-            <div class="services__pic">
-              <img
-                src="images/services/service-2.png"
-                alt="web development illustration"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-            <div class="services__content">
-              <div class="icon d-block fas fa-code"></div>
-              <h3 class="display-3--title mt-1">Web development</h3>
-              <p class="lh-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-                aliquam! Non, harum deleniti veritatis hic ad amet, consequatur
-                maxime quasi ab corporis, fuga deserunt eos beatae voluptas
-                quae.
-              </p>
+      <!-- Start of Carousel Content -->
+      <div class="row align-items-center">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+            <!-- Carousel Item 1 -->
+            <div class="carousel-item active">
+              <!-- Testimonials card -->
+              <div class="testimonials__card">
+                <p class="lh-lg">
+                  <i class="fas fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ducimus doloribus officiis omnis. Similique numquam
+                  voluptatem nam quos odit dicta error iste.
+                  <i class="fas fa-quote-right"></i>
+                <div class="ratings p-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                </p>
+              </div>
 
-              <button
-                type="button"
-                class="rounded-pill btn-rounded border-primary"
-              >
-                Learn more
-                <span>
-                  <i class="fas fa-arrow-right"></i>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Start cloud content -->
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-            <div class="services__content">
-              <div class="icon d-block fas fa-cloud-upload-alt"></div>
-              <h3 class="display-3--title mt-1">Cloud Hosting</h3>
-              <p class="lh-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-                aliquam! Non, harum deleniti veritatis hic ad amet, consequatur
-                maxime quasi ab corporis, fuga deserunt eos beatae voluptas
-                quae.
-              </p>
+              <!-- Testimonials Picture -->
+              <div class="testimonials__picture">
+                <img src="images/testimonials/client-1.jpg" alt="client-1 picture" class="img-fluid rounded-circle">
+              </div>
 
-              <button
-                type="button"
-                class="rounded-pill btn-rounded border-primary"
-              >
-                Learn more
-                <span>
-                  <i class="fas fa-arrow-right"></i>
-                </span>
-              </button>
+              <!-- Client's name and row -->
+              <div class="testimonials__name">
+                <h3>Patrick Muriungi</h3>
+                <p class="fw-light">CEO & Founder</p>
+              </div>
             </div>
+
+            <!-- Carousel Item 2 -->
+            <div class="carousel-item">
+              <!-- Testimonials card -->
+              <div class="testimonials__card">
+                <p class="lh-lg">
+                  <i class="fas fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ducimus doloribus officiis omnis. Similique numquam
+                  voluptatem nam quos odit dicta error iste.
+                  <i class="fas fa-quote-right"></i>
+                <div class="ratings p-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                </p>
+              </div>
+
+              <!-- Testimonials Picture -->
+              <div class="testimonials__picture">
+                <img src="images/testimonials/client-2.jpg" alt="client-2 picture" class="img-fluid rounded-circle">
+              </div>
+
+              <!-- Client's name and row -->
+              <div class="testimonials__name">
+                <h3>Ololade Adeleke</h3>
+                <p class="fw-light">Finance Manager</p>
+              </div>
+            </div>
+
+            <!-- Carousel Item 3 -->
+            <div class="carousel-item">
+              <!-- Testimonials card -->
+              <div class="testimonials__card">
+                <p class="lh-lg">
+                  <i class="fas fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ducimus doloribus officiis omnis. Similique numquam
+                  voluptatem nam quos odit dicta error iste.
+                  <i class="fas fa-quote-right"></i>
+                <div class="ratings p-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                </p>
+              </div>
+
+              <!-- Testimonials Picture -->
+              <div class="testimonials__picture">
+                <img src="images/testimonials/client-3.jpg" alt="client-3 picture" class="img-fluid rounded-circle">
+              </div>
+
+              <!-- Client's name and row -->
+              <div class="testimonials__name">
+                <h3>Oreselu Moyosore</h3>
+                <p class="fw-light">Global Human Resource Manager</p>
+              </div>
+            </div>
+
+            <!-- Carousel Item 4 -->
+            <div class="carousel-item">
+              <!-- Testimonials card -->
+              <div class="testimonials__card">
+                <p class="lh-lg">
+                  <i class="fas fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ducimus doloribus officiis omnis. Similique numquam
+                  voluptatem nam quos odit dicta error iste.
+                  <i class="fas fa-quote-right"></i>
+                <div class="ratings p-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                </p>
+              </div>
+
+              <!-- Testimonials Picture -->
+              <div class="testimonials__picture">
+                <img src="images/testimonials/client-4.jpg" alt="client-4 picture" class="img-fluid rounded-circle">
+              </div>
+
+              <!-- Client's name and row -->
+              <div class="testimonials__name">
+                <h3>Emmanuel Ehiokioya</h3>
+                <p class="fw-light">Global Auditor</p>
+              </div>
+            </div>
+
+
           </div>
-          <div
-            class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end"
-          >
-            <div class="services__pic">
-              <img
-                src="images/services/service-3.png"
-                alt="cloud hosting illustration"
-                class="img-fluid"
-              />
-            </div>
+
+          <div class="text-center">
+            <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button"
+              data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+
+            </button>
+            <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button"
+              data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            </button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <script src="assets/js/bootstrap.bundle.js"></script>
-    <script src="assets/vendors/js/glightbox.min.js"></script>
-    <script type="text/javascript">
-      const lightbox = GLightbox({
-        href: "https://www.youtube.com/watch?v=MefXQvGTYtE",
-        type: "video",
-        source: "youtube", //vimeo, youtube or local
-        width: 900,
-      });
-    </script>
-  </body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="1"
+        d="M0,160L34.3,144C68.6,128,137,96,206,112C274.3,128,343,192,411,197.3C480,203,549,149,617,112C685.7,75,754,53,823,37.3C891.4,21,960,11,1029,42.7C1097.1,75,1166,149,1234,160C1302.9,171,1371,117,1406,90.7L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+
+  <script src="assets/js/bootstrap.bundle.js"></script>
+  <script src="assets/vendors/js/glightbox.min.js"></script>
+  <script type="text/javascript">
+    const lightbox = GLightbox({
+      href: "https://www.youtube.com/watch?v=MefXQvGTYtE",
+      type: "video",
+      source: "youtube", //vimeo, youtube or local
+      width: 900,
+    });
+  </script>
+</body>
+
 </html>
