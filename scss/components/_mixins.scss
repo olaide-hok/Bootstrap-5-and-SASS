@@ -11,3 +11,9 @@
     top: 50%;
     left: 50%;
 }
+
+// Transition Property
+@mixin transitionProperty {
+    transition-duration: 1000ms;
+    transition-property: all;
+}
