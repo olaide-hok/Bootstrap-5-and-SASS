@@ -62,3 +62,24 @@
         }
     }
 }
+
+// Company Info Content Style
+.company-list {
+    display: block;
+    list-style-type: none;
+    position: relative;
+
+    li {
+        margin-bottom: 00.5rem;
+        text-decoration: none;
+
+        a {
+            color: $white;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
